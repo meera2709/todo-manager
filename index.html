@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Todo Manager</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <div id = "headingContainer">
+            <h1>TO-DO Manager</h1>
+        </div>
+        <div id="main" class="card">
+            <div class="card-content">
+              <div class="row">
+                <form id="task-form">
+                  <div class="input-field">
+                    <label for="task">Task name</label>
+                    <input type="text" class = "in" id="task-name">
+                  </div>
+                  <div class="input-field">
+                    <label for="task">Assignee</label>
+                    <input type="text" class = "in" id="task-assignee">
+                  </div>
+                  <div class="input-field">
+                    <label for="task">Date</label>
+                    <input type="date" class = "in" id="task-date">
+                  </div>
+                  <input type="submit" value="Add Task" class="btn">
+                </form>
+              </div>
+            </div>
+
+            
+            <div class="card-action">
+              <h4 id="task-title">In progress</h4>
+              <div class = "in-progress-table">
+                <table id = "table-in-progress">
+                    <thead class = "temp">
+                        <th>Task name</th>
+                        <th>Assignee</th>
+                        <th>Due Date</th>
+                        <th>Done</th>
+                    </thead>
+                </table>
+              </div>
+            <h4 id="task-title">Completed</h4>
+              <div class = "completed-table">
+                <table id = "table-completed">
+                    <thead>
+                        <th>Task name</th>
+                        <th>Assignee</th>
+                        <th>Due Date</th>
+                    </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
